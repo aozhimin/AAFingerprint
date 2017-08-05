@@ -8,12 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		15B114EA1F361431005BBAD0 /* AAFingerprint.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B114E81F361431005BBAD0 /* AAFingerprint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15B114F21F361499005BBAD0 /* AAFDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B114F01F361499005BBAD0 /* AAFDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15B114F31F361499005BBAD0 /* AAFDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B114F11F361499005BBAD0 /* AAFDevice.m */; };
+		15B114FC1F3616CA005BBAD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B114FB1F3616CA005BBAD0 /* main.m */; };
+		15B114FF1F3616CA005BBAD0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B114FE1F3616CA005BBAD0 /* AppDelegate.m */; };
+		15B115021F3616CA005BBAD0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B115011F3616CA005BBAD0 /* ViewController.m */; };
+		15B115051F3616CA005BBAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15B115031F3616CA005BBAD0 /* Main.storyboard */; };
+		15B115071F3616CA005BBAD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15B115061F3616CA005BBAD0 /* Assets.xcassets */; };
+		15B1150A1F3616CA005BBAD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15B115081F3616CA005BBAD0 /* LaunchScreen.storyboard */; };
+		15B1150F1F361735005BBAD0 /* AAFingerprint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B114E51F361431005BBAD0 /* AAFingerprint.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15B114E51F361431005BBAD0 /* AAFingerprint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AAFingerprint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B114E81F361431005BBAD0 /* AAFingerprint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAFingerprint.h; sourceTree = "<group>"; };
 		15B114E91F361431005BBAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15B114F01F361499005BBAD0 /* AAFDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAFDevice.h; sourceTree = "<group>"; };
+		15B114F11F361499005BBAD0 /* AAFDevice.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = AAFDevice.m; sourceTree = "<group>"; };
+		15B114F81F3616CA005BBAD0 /* AAFingerprintDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AAFingerprintDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15B114FB1F3616CA005BBAD0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		15B114FD1F3616CA005BBAD0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		15B114FE1F3616CA005BBAD0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		15B115001F3616CA005BBAD0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		15B115011F3616CA005BBAD0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		15B115041F3616CA005BBAD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15B115061F3616CA005BBAD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15B115091F3616CA005BBAD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15B1150B1F3616CA005BBAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +45,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15B114F51F3616CA005BBAD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B1150F1F361735005BBAD0 /* AAFingerprint.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				15B114E71F361431005BBAD0 /* AAFingerprint */,
+				15B114F91F3616CA005BBAD0 /* AAFingerprintDemo */,
 				15B114E61F361431005BBAD0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				15B114E51F361431005BBAD0 /* AAFingerprint.framework */,
+				15B114F81F3616CA005BBAD0 /* AAFingerprintDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,10 +77,36 @@
 		15B114E71F361431005BBAD0 /* AAFingerprint */ = {
 			isa = PBXGroup;
 			children = (
+				15B114F01F361499005BBAD0 /* AAFDevice.h */,
+				15B114F11F361499005BBAD0 /* AAFDevice.m */,
 				15B114E81F361431005BBAD0 /* AAFingerprint.h */,
 				15B114E91F361431005BBAD0 /* Info.plist */,
 			);
 			path = AAFingerprint;
+			sourceTree = "<group>";
+		};
+		15B114F91F3616CA005BBAD0 /* AAFingerprintDemo */ = {
+			isa = PBXGroup;
+			children = (
+				15B114FD1F3616CA005BBAD0 /* AppDelegate.h */,
+				15B114FE1F3616CA005BBAD0 /* AppDelegate.m */,
+				15B115001F3616CA005BBAD0 /* ViewController.h */,
+				15B115011F3616CA005BBAD0 /* ViewController.m */,
+				15B115031F3616CA005BBAD0 /* Main.storyboard */,
+				15B115061F3616CA005BBAD0 /* Assets.xcassets */,
+				15B115081F3616CA005BBAD0 /* LaunchScreen.storyboard */,
+				15B1150B1F3616CA005BBAD0 /* Info.plist */,
+				15B114FA1F3616CA005BBAD0 /* Supporting Files */,
+			);
+			path = AAFingerprintDemo;
+			sourceTree = "<group>";
+		};
+		15B114FA1F3616CA005BBAD0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15B114FB1F3616CA005BBAD0 /* main.m */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,6 +117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15B114EA1F361431005BBAD0 /* AAFingerprint.h in Headers */,
+				15B114F21F361499005BBAD0 /* AAFDevice.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +142,23 @@
 			productReference = 15B114E51F361431005BBAD0 /* AAFingerprint.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		15B114F71F3616CA005BBAD0 /* AAFingerprintDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15B1150C1F3616CA005BBAD0 /* Build configuration list for PBXNativeTarget "AAFingerprintDemo" */;
+			buildPhases = (
+				15B114F41F3616CA005BBAD0 /* Sources */,
+				15B114F51F3616CA005BBAD0 /* Frameworks */,
+				15B114F61F3616CA005BBAD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AAFingerprintDemo;
+			productName = AAFingerprintDemo;
+			productReference = 15B114F81F3616CA005BBAD0 /* AAFingerprintDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +173,11 @@
 						DevelopmentTeam = ESQPZLU835;
 						ProvisioningStyle = Automatic;
 					};
+					15B114F71F3616CA005BBAD0 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = ESQPZLU835;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 15B114DF1F361431005BBAD0 /* Build configuration list for PBXProject "AAFingerprint" */;
@@ -106,6 +186,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 15B114DB1F361431005BBAD0;
 			productRefGroup = 15B114E61F361431005BBAD0 /* Products */;
@@ -113,6 +194,7 @@
 			projectRoot = "";
 			targets = (
 				15B114E41F361431005BBAD0 /* AAFingerprint */,
+				15B114F71F3616CA005BBAD0 /* AAFingerprintDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -125,6 +207,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15B114F61F3616CA005BBAD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B1150A1F3616CA005BBAD0 /* LaunchScreen.storyboard in Resources */,
+				15B115071F3616CA005BBAD0 /* Assets.xcassets in Resources */,
+				15B115051F3616CA005BBAD0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -132,10 +224,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15B114F31F361499005BBAD0 /* AAFDevice.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15B114F41F3616CA005BBAD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B115021F3616CA005BBAD0 /* ViewController.m in Sources */,
+				15B114FF1F3616CA005BBAD0 /* AppDelegate.m in Sources */,
+				15B114FC1F3616CA005BBAD0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		15B115031F3616CA005BBAD0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15B115041F3616CA005BBAD0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		15B115081F3616CA005BBAD0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15B115091F3616CA005BBAD0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		15B114EB1F361431005BBAD0 /* Debug */ = {
@@ -274,6 +396,32 @@
 			};
 			name = Release;
 		};
+		15B1150D1F3616CA005BBAD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ESQPZLU835;
+				INFOPLIST_FILE = AAFingerprintDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aozhimin.AAFingerprintDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		15B1150E1F3616CA005BBAD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ESQPZLU835;
+				INFOPLIST_FILE = AAFingerprintDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aozhimin.AAFingerprintDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -291,6 +439,14 @@
 			buildConfigurations = (
 				15B114EE1F361431005BBAD0 /* Debug */,
 				15B114EF1F361431005BBAD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		15B1150C1F3616CA005BBAD0 /* Build configuration list for PBXNativeTarget "AAFingerprintDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15B1150D1F3616CA005BBAD0 /* Debug */,
+				15B1150E1F3616CA005BBAD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

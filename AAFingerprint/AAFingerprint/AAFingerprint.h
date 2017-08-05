@@ -17,3 +17,5 @@ FOUNDATION_EXPORT const unsigned char AAFingerprintVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <AAFingerprint/PublicHeader.h>
 
 
+#import <AAFingerprint/AAFDevice.h>
+
