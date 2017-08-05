@@ -8,6 +8,7 @@
 
 #import "AAFDevice.h"
 #include <sys/sysctl.h>
+#import <UIKit/UIDevice.h>
 
 static inline NSString *AAFGetSysCtlStrBySpecifier(char* specifier) {
     size_t size = -1;
@@ -64,7 +65,7 @@ static inline NSString *AAFGetSysCtlStrBySpecifier(char* specifier) {
 
 - (NSString *)hardwareModel {
     if (!_hardwareModel) {
-        _hardwareModel = WDTGetSysCtlStrBySpecifier("hw.machine");
+        _hardwareModel = AAFGetSysCtlStrBySpecifier("hw.machine");
     }
     return _hardwareModel;
 }
