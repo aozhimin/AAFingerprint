@@ -9,6 +9,7 @@
 #import "AAFDevice.h"
 #include <sys/sysctl.h>
 #import <UIKit/UIDevice.h>
+#import <CommonCrypto/CommonDigest.h>
 
 static inline NSString *AAFGetSysCtlStrBySpecifier(char* specifier) {
     size_t size = -1;
@@ -38,6 +39,7 @@ static inline NSString *AAFGetSysCtlStrBySpecifier(char* specifier) {
 @synthesize hardwareModel     = _hardwareModel;
 @synthesize systemVersion     = _systemVersion;
 @synthesize totalDiskSpace = _totalDiskSpace;
+@synthesize systemBootTime = _systemBootTime;
 
 + (instancetype)currentDevice {
     static AAFDevice *_currentDevice;
@@ -91,8 +93,43 @@ static inline NSString *AAFGetSysCtlStrBySpecifier(char* specifier) {
     return [NSProcessInfo processInfo].physicalMemory;
 }
 
++ (NSString *)languageList {
+    return [[NSLocale preferredLanguages] componentsJoinedByString:@","];
+}
+
+- (NSDate *)systemBootTime {
+    if (!_systemBootTime) {
+        struct timeval bootTime;
+        size_t len = sizeof(bootTime);
+        int mib[2] = {CTL_KERN, KERN_BOOTTIME};
+        
+        if(sysctl(mib, sizeof(mib) / sizeof(*mib), &bootTime, &len, NULL, 0) >= 0) {
+            _systemBootTime = [NSDate dateWithTimeIntervalSince1970:(NSTimeInterval)bootTime.tv_sec];
+        }
+    }
+    return _systemBootTime;
+}
+
 + (NSString *)hardwareFingerPrint {
     return @"";
 }
+
+#pragma mark - Helper
+
+- (NSString *)sha1StringWithString:(NSString *)string {
+    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
+    uint8_t digest[CC_SHA1_DIGEST_LENGTH];
+    
+    CC_SHA1(data.bytes, (CC_LONG)data.length, digest);
+    
+    NSMutableString *sha1String = [NSMutableString stringWithCapacity:CC_SHA1_DIGEST_LENGTH * 2];
+    
+    for (int i = 0; i < CC_SHA1_DIGEST_LENGTH; i++) {
+        [sha1String appendFormat:@"%02x", digest[i]];
+    }
+    
+    return sha1String;
+}
+
 
 @end
