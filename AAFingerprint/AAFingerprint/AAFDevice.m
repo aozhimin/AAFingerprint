@@ -16,7 +16,7 @@ static inline NSString *AAFGetSysCtlStrBySpecifier(char* specifier) {
     NSString *result = @"";
     
     if (!specifier || strlen(specifier) == 0 ||
-        sysctlbyname(specifier, NULL, size, NULL, 0) == -1 || size == -1) {
+        sysctlbyname(specifier, NULL, &size, NULL, 0) == -1 || size == -1) {
         return false;
     }
     
@@ -37,6 +37,7 @@ static inline NSString *AAFGetSysCtlStrBySpecifier(char* specifier) {
 @synthesize systemVersionCode = _systemVersionCode;
 @synthesize hardwareModel     = _hardwareModel;
 @synthesize systemVersion     = _systemVersion;
+@synthesize totalDiskSpace = _totalDiskSpace;
 
 + (instancetype)currentDevice {
     static AAFDevice *_currentDevice;
@@ -75,6 +76,19 @@ static inline NSString *AAFGetSysCtlStrBySpecifier(char* specifier) {
         _systemVersion = [[UIDevice currentDevice] systemVersion];
     }
     return _systemVersion;
+}
+
+- (NSNumber *)totalDiskSpace {
+    if (!_totalDiskSpace) {
+        NSDictionary *fileAttributes = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory()
+                                                                                               error:nil];
+        _totalDiskSpace = [fileAttributes objectForKey:NSFileSystemSize];
+    }
+    return _totalDiskSpace;
+}
+
++ (uint64_t)totalMemeory {
+    return [NSProcessInfo processInfo].physicalMemory;
 }
 
 + (NSString *)hardwareFingerPrint {

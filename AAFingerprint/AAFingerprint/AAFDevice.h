@@ -12,8 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AAFDevice : NSObject
 
 @property (nonatomic, copy, readonly) NSString *systemVersionCode;
+
 @property (nonatomic, copy, readonly) NSString *systemVersion;
+
 @property (nonatomic, copy, readonly) NSString *hardwareModel;
+
+@property (nonatomic, strong, readonly) NSNumber *totalDiskSpace;
 
 + (instancetype)currentDevice;
 
