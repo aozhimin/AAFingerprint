@@ -38,8 +38,8 @@ static inline NSString *AAFGetSysCtlStrBySpecifier(char* specifier) {
 @synthesize systemVersionCode = _systemVersionCode;
 @synthesize hardwareModel     = _hardwareModel;
 @synthesize systemVersion     = _systemVersion;
-@synthesize totalDiskSpace = _totalDiskSpace;
-@synthesize systemBootTime = _systemBootTime;
+@synthesize totalDiskSpace    = _totalDiskSpace;
+@synthesize systemBootTime    = _systemBootTime;
 
 + (instancetype)currentDevice {
     static AAFDevice *_currentDevice;
@@ -111,7 +111,20 @@ static inline NSString *AAFGetSysCtlStrBySpecifier(char* specifier) {
 }
 
 + (NSString *)hardwareFingerPrint {
-    return @"";
+    AAFDevice *device              = [AAFDevice currentDevice];
+    NSString *characteristicString = [NSString stringWithFormat:@"%@,%@,%@,%@,%@,%@,%@,%@,%@",
+                                      device.systemVersionCode,
+                                      device.hardwareModel,
+                                      device.systemVersion,
+                                      [device totalDiskSpace],
+                                      @([self totalMemeory]),
+                                      [device systemBootTime],
+                                      [self languageList],
+                                      [NSTimeZone systemTimeZone].name,
+                                      [[NSLocale autoupdatingCurrentLocale] localeIdentifier]];
+    NSString *sha1                 = [device sha1StringWithString:characteristicString];
+    NSString *hardwareFingerPrint  = [NSString stringWithFormat:@"v1_%@", sha1.uppercaseString];
+    return hardwareFingerPrint;
 }
 
 #pragma mark - Helper
