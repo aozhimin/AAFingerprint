@@ -17,6 +17,8 @@
 		15B115071F3616CA005BBAD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15B115061F3616CA005BBAD0 /* Assets.xcassets */; };
 		15B1150A1F3616CA005BBAD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15B115081F3616CA005BBAD0 /* LaunchScreen.storyboard */; };
 		15B1150F1F361735005BBAD0 /* AAFingerprint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B114E51F361431005BBAD0 /* AAFingerprint.framework */; };
+		2346FF0AB3B2B1F0A7EBFB1F /* libPods-AAFingerprint.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FC9C2DF8C78AC42B193807 /* libPods-AAFingerprint.a */; };
+		3B647959A0DA350973C08B5E /* libPods-AAFingerprintDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5467020DDD97F87D7FB9F754 /* libPods-AAFingerprintDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,12 @@
 		15B115061F3616CA005BBAD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15B115091F3616CA005BBAD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15B1150B1F3616CA005BBAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34FC9C2DF8C78AC42B193807 /* libPods-AAFingerprint.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AAFingerprint.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D5AC0D284588119329BCBF0 /* Pods-AAFingerprintDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AAFingerprintDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AAFingerprintDemo/Pods-AAFingerprintDemo.release.xcconfig"; sourceTree = "<group>"; };
+		457C36FD251689BF5A01D73D /* Pods-AAFingerprint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AAFingerprint.release.xcconfig"; path = "Pods/Target Support Files/Pods-AAFingerprint/Pods-AAFingerprint.release.xcconfig"; sourceTree = "<group>"; };
+		5467020DDD97F87D7FB9F754 /* libPods-AAFingerprintDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AAFingerprintDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4005BEF2DD65309BB5032EC /* Pods-AAFingerprint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AAFingerprint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AAFingerprint/Pods-AAFingerprint.debug.xcconfig"; sourceTree = "<group>"; };
+		B99D355C2F6B147AED083332 /* Pods-AAFingerprintDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AAFingerprintDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AAFingerprintDemo/Pods-AAFingerprintDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2346FF0AB3B2B1F0A7EBFB1F /* libPods-AAFingerprint.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15B1150F1F361735005BBAD0 /* AAFingerprint.framework in Frameworks */,
+				3B647959A0DA350973C08B5E /* libPods-AAFingerprintDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				15B114E71F361431005BBAD0 /* AAFingerprint */,
 				15B114F91F3616CA005BBAD0 /* AAFingerprintDemo */,
 				15B114E61F361431005BBAD0 /* Products */,
+				DDA1E340E7EEEC37A0B68C4D /* Pods */,
+				68052E3CEE928C06211A285A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +121,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		68052E3CEE928C06211A285A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34FC9C2DF8C78AC42B193807 /* libPods-AAFingerprint.a */,
+				5467020DDD97F87D7FB9F754 /* libPods-AAFingerprintDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDA1E340E7EEEC37A0B68C4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4005BEF2DD65309BB5032EC /* Pods-AAFingerprint.debug.xcconfig */,
+				457C36FD251689BF5A01D73D /* Pods-AAFingerprint.release.xcconfig */,
+				B99D355C2F6B147AED083332 /* Pods-AAFingerprintDemo.debug.xcconfig */,
+				3D5AC0D284588119329BCBF0 /* Pods-AAFingerprintDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -128,10 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15B114ED1F361431005BBAD0 /* Build configuration list for PBXNativeTarget "AAFingerprint" */;
 			buildPhases = (
+				24136F49DE342B13A65850EE /* [CP] Check Pods Manifest.lock */,
 				15B114E01F361431005BBAD0 /* Sources */,
 				15B114E11F361431005BBAD0 /* Frameworks */,
 				15B114E21F361431005BBAD0 /* Headers */,
 				15B114E31F361431005BBAD0 /* Resources */,
+				A76D3782958139B9E0F7245C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,9 +180,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15B1150C1F3616CA005BBAD0 /* Build configuration list for PBXNativeTarget "AAFingerprintDemo" */;
 			buildPhases = (
+				5AC42F97FE940A488A857DB4 /* [CP] Check Pods Manifest.lock */,
 				15B114F41F3616CA005BBAD0 /* Sources */,
 				15B114F51F3616CA005BBAD0 /* Frameworks */,
 				15B114F61F3616CA005BBAD0 /* Resources */,
+				88D471B44BAF4496AF271C44 /* [CP] Embed Pods Frameworks */,
+				9DB375E11367E425D6CB4BDB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,6 +255,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24136F49DE342B13A65850EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5AC42F97FE940A488A857DB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		88D471B44BAF4496AF271C44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AAFingerprintDemo/Pods-AAFingerprintDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DB375E11367E425D6CB4BDB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AAFingerprintDemo/Pods-AAFingerprintDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A76D3782958139B9E0F7245C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AAFingerprint/Pods-AAFingerprint-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		15B114E01F361431005BBAD0 /* Sources */ = {
@@ -360,6 +475,7 @@
 		};
 		15B114EE1F361431005BBAD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4005BEF2DD65309BB5032EC /* Pods-AAFingerprint.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -379,6 +495,7 @@
 		};
 		15B114EF1F361431005BBAD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 457C36FD251689BF5A01D73D /* Pods-AAFingerprint.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -398,6 +515,7 @@
 		};
 		15B1150D1F3616CA005BBAD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B99D355C2F6B147AED083332 /* Pods-AAFingerprintDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ESQPZLU835;
@@ -411,6 +529,7 @@
 		};
 		15B1150E1F3616CA005BBAD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D5AC0D284588119329BCBF0 /* Pods-AAFingerprintDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ESQPZLU835;
