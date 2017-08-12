@@ -144,5 +144,4 @@ static inline NSString *AAFGetSysCtlStrBySpecifier(char* specifier) {
     return sha1String;
 }
 
-
 @end
