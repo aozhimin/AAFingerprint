@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import <AAFingerprint/AAFingerprint.h>
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *fingerprintLabel;
 
 @end
 
@@ -17,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.fingerprintLabel.text = [NSString stringWithFormat:@"Device Fingerprint: %@", [AAFDevice deviceFingerPrint]];
 }
 
 

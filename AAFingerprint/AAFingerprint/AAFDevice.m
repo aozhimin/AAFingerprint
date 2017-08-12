@@ -110,7 +110,7 @@ static inline NSString *AAFGetSysCtlStrBySpecifier(char* specifier) {
     return _systemBootTime;
 }
 
-+ (NSString *)hardwareFingerPrint {
++ (NSString *)deviceFingerPrint {
     AAFDevice *device              = [AAFDevice currentDevice];
     NSString *characteristicString = [NSString stringWithFormat:@"%@,%@,%@,%@,%@,%@,%@,%@,%@",
                                       device.systemVersionCode,
@@ -123,8 +123,8 @@ static inline NSString *AAFGetSysCtlStrBySpecifier(char* specifier) {
                                       [NSTimeZone systemTimeZone].name,
                                       [[NSLocale autoupdatingCurrentLocale] localeIdentifier]];
     NSString *sha1                 = [device sha1StringWithString:characteristicString];
-    NSString *hardwareFingerPrint  = [NSString stringWithFormat:@"v1_%@", sha1.uppercaseString];
-    return hardwareFingerPrint;
+    NSString *deviceFingerPrint  = [NSString stringWithFormat:@"v1_%@", sha1.uppercaseString];
+    return deviceFingerPrint;
 }
 
 #pragma mark - Helper

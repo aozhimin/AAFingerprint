@@ -47,7 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return device fingerprint
  */
-+ (NSString *)hardwareFingerPrint;
++ (NSString *)deviceFingerPrint;
 
 @end
 NS_ASSUME_NONNULL_END
