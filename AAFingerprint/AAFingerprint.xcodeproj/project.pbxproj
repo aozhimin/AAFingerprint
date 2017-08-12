@@ -560,6 +560,7 @@
 				15B114EF1F361431005BBAD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15B1150C1F3616CA005BBAD0 /* Build configuration list for PBXNativeTarget "AAFingerprintDemo" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +569,7 @@
 				15B1150E1F3616CA005BBAD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
