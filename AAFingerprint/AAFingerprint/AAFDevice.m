@@ -23,8 +23,7 @@ static inline NSString *AAFGetSysCtlStrBySpecifier(char* specifier) {
     
     val = (char*)malloc(size);
     
-    if (sysctlbyname(specifier, val, &size, NULL, 0) == -1)
-    {
+    if (sysctlbyname(specifier, val, &size, NULL, 0) == -1) {
         free(val);
         return result;
     }
