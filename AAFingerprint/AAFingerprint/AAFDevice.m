@@ -18,7 +18,7 @@ static inline NSString *AAFGetSysCtlStrBySpecifier(char* specifier) {
     
     if (!specifier || strlen(specifier) == 0 ||
         sysctlbyname(specifier, NULL, &size, NULL, 0) == -1 || size == -1) {
-        return false;
+        return result;
     }
     
     val = (char*)malloc(size);
