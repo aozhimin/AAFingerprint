@@ -24,6 +24,10 @@ pod "AAFingerprint"
 
 Alex Ao, aozhimin0811@gmail.com
 
+## Contributor
+
+[NewDu](https://github.com/NewDu)
+
 ## License
 
 AAFingerprint is available under the MIT license. See the LICENSE file for more info.
