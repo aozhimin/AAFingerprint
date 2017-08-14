@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "Alex Ao" => "aozhimin0811@gmail.com" }
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "git@github.com:aozhimin/AAFingerprint.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/aozhimin/AAFingerprint.git", :tag => s.version.to_s }
   s.source_files = "AAFingerprint/**/*.{h,m}"
 
 end
